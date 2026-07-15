@@ -5,10 +5,10 @@ function ResumePreview({ data, style }) {
     <div className={`resume ${style}`}>
       <div className="resume-header">
         <h1>
-          {data.surname} {data.name} {data.patronymic}
+          {data.surname || "Фамилия отсутствует"} {data.name} {data.patronymic}
         </h1>
 
-        <h3>{data.position}</h3>
+        <h3>{data.position || "Желаемая должность отсутствует"}</h3>
       </div>
 
       <section>

@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Resume Designer</h1>
+      <h1>Оформление резюме</h1>
 
       <InputForm data={resumeData} setData={setResumeData} />
 

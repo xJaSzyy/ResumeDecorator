@@ -1,14 +1,9 @@
 .form-container {
   max-width: 900px;
-
   margin: 40px auto;
-
   background: white;
-
   padding: 30px;
-
   border-radius: 20px;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -18,41 +13,30 @@
 
 .form-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 20px;
 }
 
 .form-grid input,
 .form-grid textarea {
   width: 100%;
-
   border: 1px solid #ddd;
-
   border-radius: 12px;
-
   padding: 14px;
-
   font-size: 16px;
-
   font-family: inherit;
-
   transition: 0.2s;
 }
 
 .form-grid input:focus,
 .form-grid textarea:focus {
   outline: none;
-
   border-color: #2563eb;
-
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 textarea {
   min-height: 120px;
-
   resize: vertical;
 }
 
