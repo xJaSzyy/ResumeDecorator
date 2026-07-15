@@ -1,6 +1,7 @@
 .resume {
   width: 800px;
   min-height: 1000px;
+  box-sizing: border-box;
   margin: 40px auto;
   background: white;
   padding: 60px;

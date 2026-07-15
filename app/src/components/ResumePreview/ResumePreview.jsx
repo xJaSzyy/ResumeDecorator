@@ -1,14 +1,17 @@
+import { forwardRef } from "react";
 import "./ResumePreview.css";
 
-function ResumePreview({ data, style }) {
+const ResumePreview = forwardRef(({ data, style }, ref) => {
   return (
-    <div className={`resume ${style}`}>
+    <div ref={ref} className={`resume ${style}`}>
       <div className="resume-header">
         <h1>
           {data.surname || "Фамилия отсутствует"} {data.name} {data.patronymic}
         </h1>
 
-        <h3>{data.position || "Желаемая должность отсутствует"}</h3>
+        <div className="position">
+          {data.position || "Желаемая должность отсутствует"}
+        </div>
       </div>
 
       <section>
@@ -46,6 +49,6 @@ function ResumePreview({ data, style }) {
       </section>
     </div>
   );
-}
+});
 
 export default ResumePreview;
