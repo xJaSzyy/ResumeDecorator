@@ -36,6 +36,7 @@ function App() {
       style: {
         margin: "0",
       },
+      backgroundColor: "#ffffff",
     });
 
     const link = document.createElement("a");
@@ -54,6 +55,7 @@ function App() {
       style: {
         margin: "0",
       },
+      backgroundColor: "#ffffff",
     });
 
     const response = await fetch(dataUrl);
