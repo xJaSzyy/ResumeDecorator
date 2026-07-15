@@ -1,0 +1,73 @@
+.control-panel {
+  width: fit-content;
+  margin: 30px auto;
+  padding: 15px 20px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.control-panel button {
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #e9eef8;
+
+  color: #1f2937;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.control-panel button:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.control-panel .primary {
+  background: #2563eb;
+
+  color: white;
+}
+
+.control-panel .primary:hover {
+  background: #1d4ed8;
+}
+
+.control-panel .danger {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.control-panel .danger:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 600px) {
+  .control-panel {
+    flex-direction: column;
+  }
+
+  .control-panel button {
+    width: 100%;
+  }
+}

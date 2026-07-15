@@ -1,0 +1,73 @@
+.experience-box {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  margin-top: 20px;
+}
+
+.experience-box input {
+  display: block;
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+}
+
+.experience-box button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.experience-list {
+  margin-top: 20px;
+}
+
+.experience-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px;
+
+  margin-bottom: 10px;
+
+  background: #f3f4f6;
+
+  border-radius: 12px;
+}
+
+.experience-item p {
+  margin: 5px 0;
+}
+
+.experience-item span {
+  color: #666;
+}
+
+.experience-item button {
+  background: #ef4444;
+
+  padding: 8px 12px;
+}
