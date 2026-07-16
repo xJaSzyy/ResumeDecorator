@@ -16,10 +16,9 @@ function App() {
   const [resumeData, setResumeData] = useState({
     surname: "",
     name: "",
-
+    email: "",
     position: "",
     about: "",
-
     skills: "",
     experience: [],
     education: [],

@@ -15,6 +15,12 @@ const ResumePreview = forwardRef(({ data, style }, ref) => {
       </div>
 
       <section>
+        <h2>Контакты</h2>
+
+        <p>{data.email || "Почта отсутствует"}</p>
+      </section>
+
+      <section>
         <h2>О себе</h2>
 
         <p>{data.about || "Описание отсутствует"}</p>

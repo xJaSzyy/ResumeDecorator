@@ -33,11 +33,17 @@ function InputForm({ data, setData }) {
         />
 
         <input
-          className="full"
           name="position"
           value={data.position}
           onChange={handleChange}
           placeholder="Желаемая должность"
+        />
+
+        <input
+          name="email"
+          value={data.email}
+          onChange={handleChange}
+          placeholder="Почта"
         />
 
         <textarea
