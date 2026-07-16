@@ -16,14 +16,13 @@ function App() {
   const [resumeData, setResumeData] = useState({
     surname: "",
     name: "",
-    patronymic: "",
 
     position: "",
     about: "",
 
     skills: "",
     experience: [],
-    education: "",
+    education: [],
   });
 
   const exportPNG = async () => {

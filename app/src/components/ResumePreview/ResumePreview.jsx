@@ -45,7 +45,17 @@ const ResumePreview = forwardRef(({ data, style }, ref) => {
       <section>
         <h2>Образование</h2>
 
-        <p>{data.education || "Образование не указано"}</p>
+        <div className="educations">
+          {data.education.map((edu, index) => (
+            <div className="education" key={index}>
+              <h3>{edu.level}</h3>
+
+              <strong>{edu.direction}</strong>
+
+              <p>{edu.year}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

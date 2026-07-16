@@ -49,30 +49,35 @@
   color: #374151;
 }
 
-.jobs {
+.jobs,
+.educations {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.job {
+.job,
+.education {
   padding: 18px 20px;
   background: #f9fafb;
   border-radius: 12px;
   border-left: 4px solid #2563eb;
 }
 
-.job h3 {
+.job h3,
+.education h3 {
   margin: 0 0 5px;
   font-size: 18px;
 }
 
-.job strong {
+.job strong,
+.education strong {
   display: block;
   font-weight: 500;
 }
 
-.job p {
+.job p,
+.education p {
   margin-top: 8px;
   font-size: 14px;
   color: #6b7280;
@@ -119,7 +124,8 @@
   padding-bottom: 8px;
 }
 
-.resume.classic .job {
+.resume.classic .job,
+.resume.classic .education {
   background: white;
   border-left: none;
   border-bottom: 1px solid #ddd;
@@ -146,7 +152,8 @@
   color: #7c3aed;
 }
 
-.resume.creative .job {
+.resume.creative .job,
+.resume.creative .education {
   border-left: 4px solid #7c3aed;
   background: white;
 }

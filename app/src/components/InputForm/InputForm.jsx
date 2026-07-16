@@ -1,5 +1,6 @@
 import "./InputForm.css";
 import ExperienceForm from "../ExperienceForm/ExperienceForm.jsx";
+import EducationForm from "../EducationForm/EducationForm.jsx";
 
 function InputForm({ data, setData }) {
   function handleChange(e) {
@@ -32,13 +33,6 @@ function InputForm({ data, setData }) {
         />
 
         <input
-          name="patronymic"
-          value={data.patronymic}
-          onChange={handleChange}
-          placeholder="Отчество"
-        />
-
-        <input
           className="full"
           name="position"
           value={data.position}
@@ -55,6 +49,7 @@ function InputForm({ data, setData }) {
         />
 
         <textarea
+          className="full"
           name="skills"
           value={data.skills}
           onChange={handleChange}
@@ -73,12 +68,16 @@ function InputForm({ data, setData }) {
           }
         />
 
-        <textarea
-          className="full"
-          name="education"
-          value={data.education}
-          onChange={handleChange}
-          placeholder="Образование"
+        <EducationForm
+          education={data.education}
+
+          setEducation={(value) =>
+            setData({
+              ...data,
+
+              education: value,
+            })
+          }
         />
       </div>
     </div>

@@ -57,7 +57,7 @@ function ExperienceForm({ experience, setExperience }) {
       />
 
       <input
-        placeholder="Срок работы (например: 2 года)"
+        placeholder="Продолжительность работы"
 
         value={item.duration}
 
