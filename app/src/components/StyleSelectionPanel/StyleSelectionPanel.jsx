@@ -5,17 +5,22 @@ function StyleSelectionPanel({ selectedStyle, setSelectedStyle }) {
     {
       id: "modern",
       name: "Modern",
-      description: "Минимализм",
+      description: "Современный",
     },
     {
       id: "classic",
       name: "Classic",
-      description: "Строго",
+      description: "Классический",
     },
     {
       id: "creative",
       name: "Creative",
       description: "Яркий",
+    },
+    {
+      id: "strict",
+      name: "Strict",
+      description: "Строгий",
     },
   ];
 
