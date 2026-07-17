@@ -1,67 +1,66 @@
 .resume.classic {
-    font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
 
 .resume.classic .resume-header {
-    text-align: center;
-    padding-bottom: 0;
+  text-align: center;
+  padding-bottom: 0;
 }
 
 .resume.classic h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .resume.classic .position {
-    font-style: italic;
-    color: #555;
+  font-style: italic;
+  color: #555;
 }
 
 .resume.classic h2 {
-    border-bottom: 1px solid #333;
-    padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
 }
 
 .resume.classic .job,
 .resume.classic .education {
-    background: white;
-    border-left: none;
-    border-bottom: 1px solid #ddd;
-    border-radius: 0;
+  background: white;
+  border-left: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
 }
 
 .section-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 2px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 2px;
 }
 
 .info-bar {
-    display: flex;
-    align-items: center;
-    background: #ededed;
+  display: flex;
+  align-items: center;
+  background: #ededed;
 }
 
 .info-bar:not(:last-child) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .info-icon {
-    width: 32px;
-    height: 32px;
-    background: #ededed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 32px;
+  height: 32px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-icon img {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
+  width: 24px;
+  height: 24px;
 }
 
 .info-bar span {
-    padding-left: 8px;
-    color: #374151;
+  padding-left: 8px;
+  color: #374151;
 }

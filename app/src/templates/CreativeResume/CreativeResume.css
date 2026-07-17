@@ -1,25 +1,25 @@
 .resume.creative {
-    background: linear-gradient(135deg, #ffffff, #f5f3ff);
+  background: linear-gradient(135deg, #ffffff, #f5f3ff);
 }
 
 .resume.creative .resume-header {
-    background: #7c3aed;
-    color: white;
-    padding: 35px 35px 24px;
-    border-radius: 18px;
-    text-align: center;
+  background: #7c3aed;
+  color: white;
+  padding: 35px 35px 24px;
+  border-radius: 18px;
+  text-align: center;
 }
 
 .resume.creative .position {
-    color: #ede9fe;
+  color: #ede9fe;
 }
 
 .resume.creative h2 {
-    color: #7c3aed;
+  color: #7c3aed;
 }
 
 .resume.creative .job,
 .resume.creative .education {
-    border-left: 4px solid #7c3aed;
-    background: white;
+  border-left: 4px solid #7c3aed;
+  background: white;
 }
