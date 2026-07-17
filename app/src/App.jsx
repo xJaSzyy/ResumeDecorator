@@ -22,6 +22,7 @@ function App() {
     skills: "",
     experience: [],
     education: [],
+    city: "",
   });
 
   const exportPNG = async () => {
