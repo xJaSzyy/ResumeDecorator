@@ -15,7 +15,7 @@ const StrictResume = forwardRef(({ data }, ref) => {
           <img
             src="/ResumeDecorator/icons/person.svg"
             className="section-icon"
-          />{" "}
+          />
           Личная информация
         </h2>
 
@@ -23,6 +23,7 @@ const StrictResume = forwardRef(({ data }, ref) => {
           <div className="info-icon">
             <img src="/ResumeDecorator/icons/mail.svg" />
           </div>
+
           <span>{data.email}</span>
         </div>
 
@@ -30,60 +31,52 @@ const StrictResume = forwardRef(({ data }, ref) => {
           <div className="info-icon">
             <img src="/ResumeDecorator/icons/location.svg" />
           </div>
+
           <span>{data.city}</span>
         </div>
       </section>
 
       <section>
         <h2>
-          <img src="/ResumeDecorator/icons/key.svg" className="section-icon" />{" "}
+          <img src="/ResumeDecorator/icons/key.svg" className="section-icon" />
           Навыки
         </h2>
 
         <p>{data.skills}</p>
       </section>
 
-      <>
+      <section>
+        <h2>
+          <img src="/ResumeDecorator/icons/work.svg" className="section-icon" />
+          Опыт работы
+        </h2>
+
         {data.experience.map((job, index) => (
-          <section key={index}>
-            <h2>
-              <img
-                src="/ResumeDecorator/icons/work.svg"
-                className="section-icon"
-              />{" "}
-              Опыт работы
-              {data.experience.length > 1 ? ` ${index + 1}` : ""}
-            </h2>
-
-            <p>{job.company}</p>
-            <p>{job.position}</p>
-            <p>{job.duration}</p>
-          </section>
+          <p key={index}>
+            {job.company}, {job.position}, {job.duration}
+          </p>
         ))}
-      </>
-
-      <>
-        {data.education.map((edu, index) => (
-          <section key={index}>
-            <h2>
-              <img
-                src="/ResumeDecorator/icons/education.svg"
-                className="section-icon"
-              />{" "}
-              Образование
-              {data.education.length > 1 ? ` ${index + 1}` : ""}
-            </h2>
-
-            <p>{edu.level}</p>
-            <p>{edu.direction}</p>
-            <p>{edu.year}</p>
-          </section>
-        ))}
-      </>
+      </section>
 
       <section>
         <h2>
-          <img src="/ResumeDecorator/icons/info.svg" className="section-icon" />{" "}
+          <img
+            src="/ResumeDecorator/icons/education.svg"
+            className="section-icon"
+          />
+          Образование
+        </h2>
+
+        {data.education.map((job, index) => (
+          <p key={index}>
+            {job.level}, {job.direction}, {job.year}
+          </p>
+        ))}
+      </section>
+
+      <section>
+        <h2>
+          <img src="/ResumeDecorator/icons/info.svg" className="section-icon" />
           Дополнительная информация
         </h2>
 

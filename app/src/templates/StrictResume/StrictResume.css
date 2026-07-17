@@ -8,7 +8,7 @@
 }
 
 .resume.classic h1 {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 .resume.classic .position {
@@ -33,7 +33,7 @@
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  margin-right: 2px;
+  margin-right: 8px;
 }
 
 .info-bar {
